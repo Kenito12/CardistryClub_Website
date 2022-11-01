@@ -1,18 +1,223 @@
+body{
+    margin: 0;
+}
+
+/* nav bar style*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*logo placeholder*/
+.logo{
+    margin: 0.75rem;
+}
+
+.current{
+    text-decoration: underline!important;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    color: white;
+    text-decoration: none;
+    display:block;
+    padding: 1rem;
+}
+
+.navbar-links ul li a:hover{
+    color: gray;
+}
+
+
+.toggle-button{
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* home background */
+.homeBG{
+    height: 100vh;
+    width: 100%;
+    background-color: #b8b8b8;
+    /* background-image: url(../img/sergi-viladesau-dttmeqFUDSU-unsplash.jpg);
+    background-size: cover;
+    background-position: center; */
+}
+
+.pageQuote{
+    color: white;
+    font-size: 53px;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.fullScreen{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.changeBGC{
+    background-color: #b8b8b8;
+}
+
+.Wanna-take-a h1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Wanna-take-a{
+    padding-top: 10rem;
+}
+
+.picture{
+    width: 80%;
+    height: auto;
+}
+
+.history{
+    text-align: left;
+    padding-left: 5rem;
+    padding-top: 5rem;
+    padding-right: 5rem;
+}
+
+.history h1{
+    font-size: 60px;
+}
+
+.history p{
+    font-size: 30px;
+}
+
+
+.overlayimg{
+    position: absolute;
+    padding-right: 5rem;
+    padding-top: 5rem;
+    width: 30%;
+    height: auto;
+}
+
+@media (max-width: 600px){
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+    
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    .picture{
+        width: 35%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 10px;
+    grid-gap: 0px;
+    column-gap: 0px;
+    align-items: center;
 }
-.cell {
-    background-color: rgb(220, 220, 220);
-    height: 100px;
-}
+
+
 
 /* default - small devices */
 
 [class*="col"] {
     grid-column-end: span 12;
 }
+
 
 /* below 600px typically tablet*/
 

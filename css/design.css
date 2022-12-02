@@ -16,9 +16,17 @@ body{
 .homeBG{
     height: 100vh;
     background-color: #b8b8b8;
-    background-image: url(../img/Homepage_BG.jpg);
+    background-image: url(../img/Homepage_BG_Picture.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.line{
+    height: 5px;
+    width: 58px;
+    border-radius: 15%;
+    background-color: #F0F4F3;
+    margin: 0 auto;
 }
 
 .bgGradient{
@@ -62,7 +70,7 @@ body{
   font-size: 70px;
   text-align: center;
   color: #F0F4F3;
-  margin-top: 20%;
+  padding: 15% 0;
 }
 
 .white33{
@@ -85,7 +93,7 @@ body{
 
 
 .logo{
-  width: 90%;
+  width: 100%;
   height: auto;
   padding-left: 100px;
   padding-top: 40px;

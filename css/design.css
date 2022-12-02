@@ -18,7 +18,7 @@ body{
     background-color: #b8b8b8;
     background-image: url(../img/Homepage_BG_Picture.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center; 
 }
 
 .line{
@@ -27,6 +27,8 @@ body{
     border-radius: 15%;
     background-color: #F0F4F3;
     margin: 0 auto;
+    margin-bottom: 0;
+    margin-top: 4%;
 }
 
 .bgGradient{
@@ -81,12 +83,31 @@ body{
   margin: 0;
 }
 
+.white30{
+    font-size: 30px;
+    text-align: left;
+    color: #F0F4F3;
+    line-height: 44px;
+}
+
+.white28{
+    font-size: 28px;
+    color: #F0F3F3;
+}
+
 .pink50{
   font-size: 50px;
   text-align: center;
   color: #FEA2A2;
   margin-top: 5%;
   line-height:54px;
+}
+
+.pink60{
+    font-size: 60px;
+    text-align: left;
+    color: #FEA2A2;
+    line-height:99px;
 }
 /*  */
 
@@ -99,11 +120,44 @@ body{
   padding-top: 40px;
 }
 
+.bigAssLogo{
+    width: 100%;
+    height: auto;
+}
+
+/* responsive image */
+.rsp{
+    max-width: 100%;
+    width: 330px;
+    height: auto;
+}
+
+.histOfCard{
+    margin-top: 25%;
+}
+
+.container{
+    margin-top: 20%;
+    position: relative;
+    text-align: center;
+}
+
+.cardtitle{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /*current page underline*/
 .current{
     text-decoration: underline!important;
+    animation: none!important;
 }
 
+.current:hover{
+    color: #F0F4F3!important;
+}
 
 
 /* nav bar style*/
@@ -133,6 +187,7 @@ body{
 }
 
 .navbar-links ul li a:hover{
+    animation: fadeIn 1s;
     color: gray;
 }
 /* nav bar style*/
@@ -201,6 +256,7 @@ body{
       padding-top: 20px;
     }
 
+
     .bigfontsize{
       font-size: 40px;
       margin-top: 30%;
@@ -221,9 +277,13 @@ body{
     grid-column-end: span 12;
 }
 
+
 /* below 600px typically tablet*/
 
 @media only screen and (max-width: 600px) {
+    .padded {
+        padding: 20px;
+    }
     .sm1 {
         grid-column-end: span 12;
     }
@@ -247,6 +307,9 @@ body{
 /* above 601px typically tablet*/
 
 @media only screen and (min-width: 601px) {
+    .padded {
+        padding: 80px;
+    }
     .md1 {
         grid-column-end: span 12;
     }
@@ -270,6 +333,9 @@ body{
 /* above 1025px typically desktop*/
 
 @media only screen and (min-width: 1025px) {
+    .padded {
+        padding: 50px 140px;
+    }
     .col1 {
         grid-column-end: span 12;
     }

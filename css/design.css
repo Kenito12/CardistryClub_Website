@@ -1,6 +1,102 @@
 body{
-    margin: 0;
+  margin: 0;
+  background-color: black;
+  animation: fadeIn 2s;
 }
+
+*{
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+.homeBG{
+    height: 100vh;
+    background-color: #b8b8b8;
+    background-image: url(../img/Homepage_BG.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bgGradient{
+  background: linear-gradient( rgba(24,17,18,1) 0%, rgba(63,58,67,1) 100%);  
+}
+
+
+/* font */
+.assistant-reg{
+   font-family: 'Assistant', sans-serif;
+  font-weight:400;
+}
+
+.assistant-b{
+  font-family: 'Assistant', sans-serif;
+  font-weight: 700;
+}
+
+.catamara{
+  font-family: 'Catamaran', sans-serif;
+}
+
+
+.catamara-semib{
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 600;
+}
+
+.maitree{
+  font-family: 'Maitree', serif;
+  font-weight:400;
+}
+.maitree-semib{
+  font-family: 'Maitree', serif;
+  font-weight: 600;
+}
+/*  */
+
+/* size and color */
+.white70{
+  font-size: 70px;
+  text-align: center;
+  color: #F0F4F3;
+  margin-top: 20%;
+}
+
+.white33{
+  font-size: 33px;
+  text-align: center;
+  color: #F0F3F3;
+  line-height:54px;
+  margin: 0;
+}
+
+.pink50{
+  font-size: 50px;
+  text-align: center;
+  color: #FEA2A2;
+  margin-top: 5%;
+  line-height:54px;
+}
+/*  */
+
+
+
+.logo{
+  width: 100%;
+  height: auto;
+  padding-left: 100px;
+  padding-top: 40px;
+}
+
+/*current page underline*/
+.current{
+    text-decoration: underline!important;
+}
+
+
 
 /* nav bar style*/
 .navbar{
@@ -9,27 +105,20 @@ body{
     justify-content: space-between;
 }
 
-/*logo placeholder*/
-.logo{
-    margin: 0.75rem;
-}
-
-.current{
-    text-decoration: underline!important;
-}
-
 .navbar-links ul{
     margin: 0;
     padding: 0;
     display: flex;
+    padding-right: 100px;
 }
 
 .navbar-links li{
     list-style: none;
+    font-size: 20px;
 }
 
 .navbar-links li a{
-    color: white;
+    color: #F0F4F3;
     text-decoration: none;
     display:block;
     padding: 1rem;
@@ -38,11 +127,12 @@ body{
 .navbar-links ul li a:hover{
     color: gray;
 }
+/* nav bar style*/
 
-
+/*Toggle button*/
 .toggle-button{
     position: absolute;
-    top: 2.5rem;
+    top: 1.5rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -54,76 +144,13 @@ body{
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: white;
+    background-color: #F0F4F3;
     border-radius: 10px;
 }
+/*Toggle Button*/
 
-/* home background */
-.homeBG{
-    height: 100vh;
-    width: 100%;
-    background-color: #b8b8b8;
-    /* background-image: url(../img/sergi-viladesau-dttmeqFUDSU-unsplash.jpg);
-    background-size: cover;
-    background-position: center; */
-}
-
-.pageQuote{
-    color: white;
-    font-size: 53px;
-    text-align: center;
-    margin-top: 20%;
-}
-
-.fullScreen{
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-}
-
-.changeBGC{
-    background-color: #b8b8b8;
-}
-
-.Wanna-take-a h1{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.Wanna-take-a{
-    padding-top: 10rem;
-}
-
-.picture{
-    width: 80%;
-    height: auto;
-}
-
-.history{
-    text-align: left;
-    padding-left: 5rem;
-    padding-top: 5rem;
-    padding-right: 5rem;
-}
-
-.history h1{
-    font-size: 60px;
-}
-
-.history p{
-    font-size: 30px;
-}
-
-
-.overlayimg{
-    position: absolute;
-    padding-right: 5rem;
-    padding-top: 5rem;
-    width: 30%;
-    height: auto;
-}
-
-@media (max-width: 600px){
+/*Media Queries for Phone*/
+@media (max-width: 800px){
     .toggle-button{
         display: flex;
     }
@@ -141,11 +168,12 @@ body{
     .navbar-links ul{
         flex-direction: column;
         width: 100%;
-        background-color: black;
+        background-color:  lightgray;
+      padding-right: 0px;
     }
 
     .navbar-links li{
-        text-align: center;
+        text-align: center
     }
     
     .navbar-links li a{
@@ -159,65 +187,31 @@ body{
     .picture{
         width: 35%;
     }
+
+    .logo{
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+
+    .bigfontsize{
+      font-size: 40px;
+      margin-top: 30%;
+    }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*12gridProperties*/
 
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 0px;
-    column-gap: 0px;
-    align-items: center;
 }
-
-
 
 /* default - small devices */
 
 [class*="col"] {
     grid-column-end: span 12;
 }
-
 
 /* below 600px typically tablet*/
 

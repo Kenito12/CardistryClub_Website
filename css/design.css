@@ -95,6 +95,11 @@ body{
     color: #F0F3F3;
 }
 
+.white22{
+    font-size: 22px;
+    color: #F0F3F3;
+}
+
 .pink50{
   font-size: 50px;
   text-align: center;
@@ -147,6 +152,26 @@ body{
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.navButton{
+    width: 262px;
+    height: auto;
+    background-color: #FEA2A2;
+    border-radius: 60px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-left: 20%;
+}
+
+.navButton a{
+    text-decoration: none;
+}
+
+.navButtonTitle{
+    padding: 3%;
 }
 
 /*current page underline*/

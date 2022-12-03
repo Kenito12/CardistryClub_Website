@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Catamaran:wght@400;600&family=Maitree:wght@400;600&display=swap');
+
 body{
   margin: 0;
   background-color: black;
@@ -114,6 +116,13 @@ body{
     color: #FEA2A2;
     line-height:99px;
 }
+
+.black20{
+    font-size: 20px;
+    color: #5f5865;
+    line-height: 25px;
+}
+
 /*  */
 
 
@@ -164,6 +173,12 @@ body{
     margin-top: 50%;
     margin-bottom: 50%;
     margin-left: 20%;
+    transition: all 0.3s ease;
+}
+
+.navButton:hover{
+    background-color: #ffd3d3;
+    border-radius: 25px;
 }
 
 .navButton a{
@@ -173,6 +188,7 @@ body{
 .navButtonTitle{
     padding: 3%;
 }
+
 
 /*current page underline*/
 .current{
@@ -209,11 +225,12 @@ body{
     text-decoration: none;
     display:block;
     padding: 1rem;
+    transition: all 0.3s ease;
 }
 
 .navbar-links ul li a:hover{
-    animation: fadeIn 1s;
     color: gray;
+    padding-top: 10px;
 }
 /* nav bar style*/
 
@@ -256,7 +273,7 @@ body{
     .navbar-links ul{
         flex-direction: column;
         width: 100%;
-        background-color:  lightgray;
+        background-color: rgba(95, 88, 101, 0.1);
       padding-right: 0px;
     }
 
@@ -279,6 +296,7 @@ body{
     .logo{
       padding-left: 20px;
       padding-top: 20px;
+      width: 70%;
     }
 
 
@@ -287,6 +305,55 @@ body{
       margin-top: 30%;
     }
 }
+
+
+/* footer styling */
+
+.footerContainer{
+	max-width: 1170px;
+    max-height: 232px;
+	margin:auto;
+}
+.footerRow{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer{
+	background-color: #FEA2A2;
+    padding: 50px 0;
+    padding-left: 10%;
+}
+.footer-col{
+   width: 30%;
+   margin: 0 auto;
+}
+
+.footer-col h4{
+    margin-bottom: 0;
+}
+.footer-col ul{
+	list-style: none;
+    padding: 0;
+}
+.footer-col ul li a{
+    font-size: 18px;
+    color: #5f5865;
+    line-height: 25px;
+	text-decoration: none;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #F0F4F3;
+	padding-left: 8px;
+}
+
+.footerLogo{
+    float: left;
+    padding-top: 20px;
+    padding-right: 5px;
+}
+/* ............ */
 
 
 /*12gridProperties*/
@@ -306,6 +373,64 @@ body{
 /* below 600px typically tablet*/
 
 @media only screen and (max-width: 600px) {
+
+    
+    .pink60{
+        font-size: 35px;
+    }
+    .pink50{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .white70{
+        font-size: 45px;
+        text-align: left;
+    }
+    .white33{
+        font-size: 23px;
+        line-height: 25px;
+    }
+    .white30{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .white28{
+        font-size: 20px;
+    }
+    .white22{
+        font-size: 15px;
+    }
+
+    .navButton{
+        margin-left: 25%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 200px;
+        border-radius: 40px;
+        
+    }
+
+    .bigAssLogo{
+        margin-bottom: 100px;
+    }
+
+    .rsp{
+        width:70%;
+    }
+
+    .line{
+        margin-top: 65%;
+    }
+
+    .footer-col{
+        width: 100%;
+    }
+
+    .footerContainer{
+        max-height: none;
+    }
+
     .padded {
         padding: 20px;
     }
@@ -332,6 +457,12 @@ body{
 /* above 601px typically tablet*/
 
 @media only screen and (min-width: 601px) {
+
+    /* .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    } */
+
     .padded {
         padding: 80px;
     }

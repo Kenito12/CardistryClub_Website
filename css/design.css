@@ -2,7 +2,7 @@
 
 body{
   margin: 0;
-  background-color: #221f24;
+  background-color: black;
   animation: fadeIn 2s;
 }
 
@@ -106,12 +106,18 @@ body{
     color: #FFFDFA;
 }
 
+
 .pink30{
     font-size: 30px;
     color: #FEA2A2;
     line-height: 50px;
     text-align: center;
     margin: 0;
+}
+
+.pink35{
+    font-size: 35px;
+    color: #FEA2A2;
 }
 
 .pink50{
@@ -131,7 +137,6 @@ body{
 
 .pink70{
     font-size: 70px;
-    text-align: center;
     color: #FEA2A2;
     line-height: 116px;
     margin: 0;
@@ -177,10 +182,6 @@ body{
 
 .bgGradient{
   background: linear-gradient( rgba(24,17,18,1) 0%, rgba(63,58,67,1) 100%);  
-}
-
-.tutorialGradient{
-    background: linear-gradient(rgba(28,20,23,1) 0%, rgba(95,88,101,1) 100%);
 }
 
 .logo{
@@ -418,6 +419,16 @@ body{
 
 
 /* tutorial card*/
+
+.tutorialGradient{
+    background: linear-gradient(rgba(28,20,23,1) 0%, rgba(95,88,101,1) 100%);
+    background-color:#5f5865;
+}
+
+.letsLearnYour{
+    text-align: center;
+}
+
 .ohTutorialCard{
     background-image:url(../img/oneHandCut.png);
     height: 330px;
@@ -559,6 +570,71 @@ body{
 
 /* ........ */
 
+/* How to Start */
+
+.howToStart{
+    text-align: center;
+}
+
+.toStartCard{
+    line-height: 40px;        
+    text-align: center;
+}
+
+.brandTitle{
+    margin-top: 15%;
+}
+
+.youCanFind{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.clickHereButton{
+    color:#FFFDFA;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    background-color: #FEA2A2;
+    text-decoration: none;
+    cursor: pointer;
+    width: 176px;
+    transition: all 0.3s ease;
+}
+
+.clickHereButton:hover{
+    background-color: #FFFDFA;
+    color: #FEA2A2;
+    border-radius: 15px;
+}
+
+.bicyclersp{
+    max-width: 100%;
+    height: auto;
+    padding: 15%;
+}
+
+.beersp{
+    max-width: 100%;
+    height: auto;
+    padding-top: 15%;
+    padding-left: 25%;
+}
+
+.virtrsp{
+    max-width: 100%;
+    height: auto;
+    padding-top: 15%;
+    padding-left: 28%;
+}
+
+.marginbuttom{
+    margin-bottom: 25%;
+}
+/* ..... */
+
 /*12gridProperties*/
 
 .grid {
@@ -577,7 +653,33 @@ body{
 
 @media only screen and (max-width: 600px) {
 
-/* event */
+
+/* How To Start */
+    .bicyclersp{
+        padding: 5%;
+    }
+
+    .beersp{
+        padding: 5%;
+    }
+
+    .virtrsp{
+        max-width: 100%;
+        height: auto;
+        padding: 5%;
+    }
+
+    .marginbuttom{
+        margin-bottom: 5%;
+    }
+
+    .clickHereButton{
+        width: 150px;
+    }
+/* ...... */
+
+
+    /* event */
     .eventTitle{
         width: 300px;
     }
@@ -620,6 +722,9 @@ body{
     }
 /* ...... */
  
+    .pink35{
+        font-size: 20px;
+    }
     .pink60{
         font-size: 35px;
     }

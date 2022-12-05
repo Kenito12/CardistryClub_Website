@@ -12,7 +12,7 @@
     <script src="script/script.js" defer></script>
 </head>
 
-<body>
+<body class="tutorialGradient">
   <nav class="navbar">
     <a href="index.html"><img src="../img/Logo.png" class="logo"></a>
     <a href="#" class="toggle-button">
@@ -31,71 +31,84 @@
     </div>
   </nav>
 
-  <div class="grid">
+  <div class="grid padded">
     <div class="cell col1">
-      <h1 class="maitree-semib">Let's Learn your first Cardistry Move!!!</h1>
-      <h2 class="maitree">There are roughly 5 types of Cardistry move</h2>
+      <h1 class="maitree-semib pink70 letsLearnYour">Let's Learn your first Cardistry Move!</h1>
+      <h2 class="maitree white53">There are roughly 5 types of <br> Cardistry move</h2>
     </div>
-    <div class="cell col3">
-      <div>Picture</div>
-      <h3 class="maitree-semib">One-hand cut</h3>
-      <p class="catamara">A move that only requires one hand to perform.</p>
+    <div class="cell col3 ohTutorialCard">
+      <h3 class="maitree-semib pink30">One-hand cut</h3>
+      <p class="catamara white24">A move that only requires <br>one hand to perform.</p>
     </div>
-    <div class="cell col3">
-      <div>Picture</div>
-      <h3 class="maitree-semib">Two-hand cut</h3>
-      <p class="catamara">A move that requires both hands to perform.</p>
+    <div class="cell col3 thTutorialCard">
+      <h3 class="maitree-semib pink30">Two-hand cut</h3>
+      <p class="catamara white24">A move that requires both<br> hands to perform.</p>
     </div>
-    <div class="cell col3">
-      <div>Picture</div>
-      <h3 class="maitree-semib">Isolation/Twirls</h3>
-      <p class="catamara">A move that can be done with a single card.</p>
+    <div class="cell col3 isoTutorialCard">
+      <h3 class="maitree-semib pink30">Isolation/Twirls</h3>
+      <p class="catamara white24">A move that can be done <br>with a single card.</p>
     </div>
-    <div class="cell col2 md2">
-      <div>Picture</div>
-      <h3 class="maitree-semib">Fan/Spread</h3>
-      <p class="catamara"> A move that involves spreading a deck of cards in various ways </p>
+    <div class="cell col2 md2 fanTutorialCard">
+      <h3 class="maitree-semib pink30">Fan/Spread</h3>
+      <p class="catamara white24"> A move that involves <br>spreading a deck of cards <br>in various ways </p>
     </div>
-    <div class="cell col2 md2">
-      <div>Picture</div>
-      <h3 class="maitree-semib">Ariel</h3>
-      <p class="catamara"> A move that involves shooting or throwing a pocket or card in the air</p>
+    <div class="cell col2 md2 arielTutorialCard">
+      <h3 class="maitree-semib pink30">Ariel</h3>
+      <p class="catamara white24"> A move that involves <br>shooting or throwing a <br>pocket or card in the air</p>
     </div>
     <div class="cell col1">
-    <h3 class="maitree">We choose some of the basic and popular tricks for beginners, Try them out Below!!!</h3>
+    <h3 class="maitree white33 wechoose">We choose some of the basic and popular tricks for <br> beginners, Try them out Below!</h3>
     </div>
-      <div class="cell col3">
-      <h4 class="maitree-semib">Thumb Fan</h4>
-      <div>Video</div>
+    <div class="cell col3 tutorcontainer">
+      <a href="https://youtu.be/XFIQk2LiKD0" target="_blank">
+        <img src="../img/Thumb.png" class="tutorialrsp">
+        <h4 class="maitree-semib tutorcardtitle white35">Thumb Fan</h4>
+      </a>
     </div>
-    <div class="cell col3">
-      <h4 class="maitree-semib">Sybil Cut</h4>
-      <div>Video</div> 
+    <div class="cell col3 tutorcontainer  white35">
+      <a href="https://youtu.be/s6F3Em7McOs" target="_blank">
+        <img src="../img/sybil.png" class="tutorialrsp">
+        <h4 class="maitree-semib tutorcardtitle white35">Sybil Cut</h4>
+      </a>
     </div>
-    <div class="cell col3">
-      <h4 class="maitree-semib">Charlier Cut</h4>
-      <div>Video</div>
+    <div class="cell col3 tutorcontainer  white35">
+      <a href="https://youtu.be/BNC_DD9XccI" target="_blank">
+        <img src="../img/Charlier.png" class="tutorialrsp">
+        <h4 class="maitree-semib tutorcardtitle white35">Charlier Cut</h4>
+      </a>
     </div>
-    <!--footer -->
-      <div class="cell col3 md2">
-        <p class="catamara-semib">Cardistry Club</p>
-        <p class="catamara-semib">@2022 All rights reserved</p>
-      </div>
-      <div class="cell col3 md2">
-        <p class="catamara-semib">Navigation</p>
-        <p class="catamara">Home</p>
-        <p class="catamara">How to Start</p>
-        <p class="catamara">Tutorial</p>
-        <p class="catamara">Event</p>
-        <p class="catamara">Collection</p>
-      </div>
-      <div class="cell col3 md2">
-        <p class="catamara-semib">Contact</p>
-        <p class="catamara">contact@cardistryclub.com</p>
-        <p class="catamara">kanjanap_ken</p>
-        <p class="catamara">Discord</p>
-      </div>
   </div>
+
+  <!--footer -->
+  <footer class="footer">
+    <div class="footerContainer">
+      <div class="footerRow">
+        <div class="footer-col">
+          <img class="footerLogo" src="../img/footerLogo.png">
+          <h4 class="catamara-semib black20">Cardistry Club <br> @2022 All rights reserved</h4>
+        </div>
+        <div class="footer-col">
+          <h4 class="maitree-semib black20">Navigation</h4>
+          <ul class="catamara">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="howToStart.html">How to Start</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="collection.html">Collection</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="maitree-semib black20">Contact</h4>
+          <ul class="catamara">
+            <li><a href="#">contact@cardistryclub.com</a></li>
+            <li><a href="#">kanjanap.ken</a></li>
+            <li><a href="#">Discord</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
   
 </body>
 

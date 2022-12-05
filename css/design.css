@@ -523,6 +523,7 @@ body{
     background-color: #FFFDFA;
 }
 
+
 .eventBG{
     height: 50vh;
     background-color: #b8b8b8;
@@ -635,6 +636,63 @@ body{
 }
 /* ..... */
 
+/* collection */
+
+.aop{
+    padding-top: 5%;
+}
+
+.dnd{
+    padding-top: 5%;
+}
+
+.aoprsp{
+    max-width: 100%;
+    height: auto;
+    padding-left: 20%;
+}
+
+.virtursp{
+    max-width: 100%;
+    height: auto;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+
+.fontainrsp{
+    max-width: 100%;
+    height: auto;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+
+.touchrsp{
+    max-width: 100%;
+    height: auto;
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+.dndrsp{
+    max-width: 100%;
+    height: auto;
+    padding-left: 5%;
+}
+
+.theorsp{
+    max-width: 100%;
+    height: auto;
+    padding-left: 22%;
+    padding-top: 5%;
+}
+
+.collTitle{
+    margin-top: 10%;
+}
+
+
+/* ..... */
+
 /*12gridProperties*/
 
 .grid {
@@ -652,6 +710,38 @@ body{
 /* below 600px typically tablet*/
 
 @media only screen and (max-width: 600px) {
+
+/* cllection */
+
+.aoprsp{
+   padding: 5%;
+}
+
+.virtursp{
+    padding: 5%;
+   
+}
+
+.fontainrsp{
+    padding: 5%;
+   
+}
+
+.touchrsp{
+    padding: 5%;
+   
+}
+
+.dndrsp{
+    padding: 5%;
+}
+
+.theorsp{
+    padding: 10%;
+    
+}
+
+/* ... */
 
 
 /* How To Start */
